@@ -219,4 +219,24 @@ html {
 .classes .weights {
   background-image: url(../img/weights.jpg);
 }
+
+.schedule {
+  text-align: left;
+}
+
+.schedule .day-plan {
+  line-height: 1.7;
+}
+
+.schedule .day-plan .time {
+  font-weight: 900;
+  color: #16120f;
+  color: #d72323;
+}
+
+.schedule .day-plan .planned-class {
+  color: #16120f;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=style.css.map */
