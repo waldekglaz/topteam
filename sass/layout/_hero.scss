@@ -1,0 +1,30 @@
+.hero {
+    height: calc(100vh + 80px);
+    background-image: url(../img/romek.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-size: 42px;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 1.7;
+
+    }
+
+    .btn {
+        background-color: $red;
+        color: $white;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: 900;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,49 @@
+.navbar {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    background-color: $black;
+    transform: translateX(100%);
+    transition: .3s;
+    // display: none;
+
+    ul {
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: 900;
+        text-align: right;
+
+        li {
+            margin-bottom: 30px;
+            margin-right: 40px;
+
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    align-items: center;
+    position: absolute;
+    right: 25px;
+    top: 23px;
+    cursor: pointer;
+
+    .bar {
+        width: 30px;
+        height: 4px;
+        background-color: $red;
+        margin: 3px 0;
+    }
+}
+
+.navbar.active {
+    transform: translateY(0);
+}

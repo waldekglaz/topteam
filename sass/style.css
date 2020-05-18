@@ -1,0 +1,161 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  right: 0;
+  background-color: #16120f;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navbar ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: right;
+}
+
+.navbar ul li {
+  margin-bottom: 30px;
+  margin-right: 40px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #f1ede1;
+}
+
+.hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 25px;
+  top: 23px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: #d72323;
+  margin: 3px 0;
+}
+
+.navbar.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.header {
+  padding: 20px;
+  background-color: #16120f;
+  color: #f1ede1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+.header .logo {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 160px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.header .logo span {
+  font-size: 14px;
+  color: #d72323;
+  position: relative;
+}
+
+.header .logo span::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #d72323;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  -webkit-transform: translate(2px, -50%);
+          transform: translate(2px, -50%);
+}
+
+.header .logo span::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #d72323;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  -webkit-transform: translate(-12px, -50%);
+          transform: translate(-12px, -50%);
+}
+
+.hero {
+  height: calc(100vh + 80px);
+  background-image: url(../img/romek.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #f1ede1;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+
+.hero .btn {
+  background-color: #d72323;
+  color: #f1ede1;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 900;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=style.css.map */
