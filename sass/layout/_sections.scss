@@ -1,0 +1,48 @@
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+.classes {
+    .card {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 40px;
+        color: $white;
+        text-shadow: 2px 2px 4px $black;
+        margin-bottom: 20px;
+
+        h3 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    }
+
+    .crossfit {
+        background-image: url(../img/crossfit.jpg);
+    }
+
+    .boxing {
+        background-image: url(../img/boxing.jpg);
+    }
+
+    .mma {
+        background-image: url(../img/mma.jpg);
+    }
+
+    .bjj {
+        background-image: url(../img/bjj.jpg);
+    }
+
+    .weights {
+        background-image: url(../img/weights.jpg);
+    }
+
+
+
+}

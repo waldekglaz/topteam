@@ -57,11 +57,27 @@ html {
   height: 4px;
   background-color: #d72323;
   margin: 3px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .navbar.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.hamburger.active .bar1 {
+  -webkit-transform: rotate(45deg) translate(7px, 7px);
+          transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active .bar2 {
+  display: none;
+}
+
+.hamburger.active .bar3 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .header {
@@ -140,6 +156,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
 .hero h1 {
@@ -157,5 +174,49 @@ html {
   text-decoration: none;
   font-weight: 900;
   border-radius: 5px;
+}
+
+.section {
+  padding: 20px;
+  text-align: center;
+}
+
+.classes .card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  color: #f1ede1;
+  text-shadow: 2px 2px 4px #16120f;
+  margin-bottom: 20px;
+}
+
+.classes .card h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.classes .card p {
+  line-height: 1.5;
+}
+
+.classes .crossfit {
+  background-image: url(../img/crossfit.jpg);
+}
+
+.classes .boxing {
+  background-image: url(../img/boxing.jpg);
+}
+
+.classes .mma {
+  background-image: url(../img/mma.jpg);
+}
+
+.classes .bjj {
+  background-image: url(../img/bjj.jpg);
+}
+
+.classes .weights {
+  background-image: url(../img/weights.jpg);
 }
 /*# sourceMappingURL=style.css.map */
