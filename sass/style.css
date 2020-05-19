@@ -5,6 +5,10 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   position: absolute;
   top: 84px;
@@ -52,6 +56,12 @@ html {
   cursor: pointer;
 }
 
+@media (min-width: 1024px) {
+  .hamburger {
+    right: 50px;
+  }
+}
+
 .hamburger .bar {
   width: 30px;
   height: 4px;
@@ -89,6 +99,12 @@ html {
   left: 0;
   right: 0;
   z-index: 5;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 20px 80px 10px;
+  }
 }
 
 .header .logo {
@@ -181,9 +197,27 @@ html {
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  .section {
+    padding: 20px 80px;
+  }
+}
+
 .classes {
   background-color: #16120f;
   color: #f1ede1;
+}
+
+@media (min-width: 768px) {
+  .classes .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .classes .card {
@@ -193,6 +227,22 @@ html {
   padding: 40px;
   text-shadow: 2px 2px 4px #16120f;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .classes .card {
+    -ms-flex-preferred-size: 38%;
+        flex-basis: 38%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .classes .card {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    margin-bottom: 40px;
+    padding: 80px 60px;
+  }
 }
 
 .classes .card h3 {
@@ -229,6 +279,34 @@ html {
   background-color: #f1ede1;
 }
 
+@media (min-width: 768px) {
+  .schedule {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 768px) {
+  .schedule .day {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    border-bottom: 2px solid #16120f;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .schedule .day {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
 .schedule .day-plan {
   line-height: 1.7;
 }
@@ -250,41 +328,125 @@ html {
   color: #f1ede1;
 }
 
+@media (min-width: 1024px) {
+  .coaches h2 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .coaches .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .coaches .card {
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .coaches .card {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .coaches .card {
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%;
+  }
 }
 
 .coaches .card img {
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .coaches .card img {
+    height: 240px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .coaches .card img {
+    height: 340px;
+  }
+}
+
 .location {
   background-color: #f1ede1;
+  padding: 0;
 }
 
 .location .map {
   height: 50vh;
-  margin-bottom: 20px;
 }
 
-.location .contact-details {
+@media (min-width: 768px) {
+  .location .map {
+    height: 60vh;
+  }
+}
+
+.location .contact {
+  background-color: #d72323;
+  color: #f1ede1;
+  padding: 30px 0;
+}
+
+.location .contact h3 {
+  margin-bottom: 5px;
+}
+
+.location .contact .phone-number {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.location .contact address {
+  font-style: normal;
+  margin-top: 20px;
+  font-size: 26px;
+  font-weight: 100;
+}
+
+.location .contact a {
+  color: #f1ede1;
+  text-decoration: none;
+}
+
+.location .contact p {
+  font-size: 26px;
+  font-weight: 100;
+}
+
+.location .contact .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.location .contact-details img {
-  width: 20%;
-}
-
-.location address {
-  font-style: normal;
-  text-align: left;
+.location .contact .socials a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  line-height: 50px;
+  border-radius: 50%;
+  border: 2px solid #f1ede1;
+  color: #f1ede1;
+  font-size: 20px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

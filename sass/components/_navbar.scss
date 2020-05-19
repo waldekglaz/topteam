@@ -36,6 +36,10 @@
     top: 23px;
     cursor: pointer;
 
+    @include desktop {
+        right: 50px;
+    }
+
     .bar {
         width: 30px;
         height: 4px;

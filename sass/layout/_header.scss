@@ -8,6 +8,10 @@
     right: 0;
     z-index: 5;
 
+    @include desktop {
+        padding: 20px 80px 10px;
+    }
+
     .logo {
         font-size: 30px;
         display: flex;
