@@ -252,4 +252,8 @@ html {
 .coaches .card img {
   width: 100%;
 }
+
+.location .map {
+  height: 50vh;
+}
 /*# sourceMappingURL=style.css.map */
