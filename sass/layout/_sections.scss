@@ -4,12 +4,13 @@
 }
 
 .classes {
+  background-color: $black;
+  color: $white;
   .card {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 40px;
-    color: $white;
     text-shadow: 2px 2px 4px $black;
     margin-bottom: 20px;
 
@@ -48,6 +49,7 @@
 
 .schedule {
   text-align: left;
+  background-color: $white;
 
   .day-plan {
     line-height: 1.7;
@@ -82,7 +84,21 @@
 // location
 
 .location {
+  background-color: $white;
   .map {
     height: 50vh;
+    margin-bottom: 20px;
+  }
+  .contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: 20%;
+    }
+  }
+  address {
+    font-style: normal;
+    text-align: left;
   }
 }

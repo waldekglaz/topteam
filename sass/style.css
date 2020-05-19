@@ -181,12 +181,16 @@ html {
   text-align: center;
 }
 
+.classes {
+  background-color: #16120f;
+  color: #f1ede1;
+}
+
 .classes .card {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px;
-  color: #f1ede1;
   text-shadow: 2px 2px 4px #16120f;
   margin-bottom: 20px;
 }
@@ -222,6 +226,7 @@ html {
 
 .schedule {
   text-align: left;
+  background-color: #f1ede1;
 }
 
 .schedule .day-plan {
@@ -253,7 +258,33 @@ html {
   width: 100%;
 }
 
+.location {
+  background-color: #f1ede1;
+}
+
 .location .map {
   height: 50vh;
+  margin-bottom: 20px;
+}
+
+.location .contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location .contact-details img {
+  width: 20%;
+}
+
+.location address {
+  font-style: normal;
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
