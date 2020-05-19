@@ -1,70 +1,80 @@
 .section {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 .classes {
-    .card {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 40px;
-        color: $white;
-        text-shadow: 2px 2px 4px $black;
-        margin-bottom: 20px;
+  .card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    color: $white;
+    text-shadow: 2px 2px 4px $black;
+    margin-bottom: 20px;
 
-        h3 {
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        p {
-            line-height: 1.5;
-        }
+    h3 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
 
-    .crossfit {
-        background-image: url(../img/crossfit.jpg);
+    p {
+      line-height: 1.5;
     }
+  }
 
-    .boxing {
-        background-image: url(../img/boxing.jpg);
-    }
+  .crossfit {
+    background-image: url(../img/crossfit.jpg);
+  }
 
-    .mma {
-        background-image: url(../img/mma.jpg);
-    }
+  .boxing {
+    background-image: url(../img/boxing.jpg);
+  }
 
-    .bjj {
-        background-image: url(../img/bjj.jpg);
-    }
+  .mma {
+    background-image: url(../img/mma.jpg);
+  }
 
-    .weights {
-        background-image: url(../img/weights.jpg);
-    }
+  .bjj {
+    background-image: url(../img/bjj.jpg);
+  }
 
-
-
+  .weights {
+    background-image: url(../img/weights.jpg);
+  }
 }
 
 // SCHEDULE
 
 .schedule {
-    text-align: left;
+  text-align: left;
 
-    .day-plan {
-        line-height: 1.7;
+  .day-plan {
+    line-height: 1.7;
 
-        .time {
-            font-weight: 900;
-            color: $black;
-            color: $red;
-        }
-
-        .planned-class {
-            color: $black;
-            margin-left: 20px;
-            text-transform: uppercase;
-        }
+    .time {
+      font-weight: 900;
+      color: $black;
+      color: $red;
     }
+
+    .planned-class {
+      color: $black;
+      margin-left: 20px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// coaches
+
+.coaches {
+  background-color: $black;
+  color: $white;
+  .card {
+    margin-bottom: 40px;
+    img {
+      width: 100%;
+    }
+  }
 }

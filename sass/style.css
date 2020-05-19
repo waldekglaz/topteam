@@ -239,4 +239,17 @@ html {
   margin-left: 20px;
   text-transform: uppercase;
 }
+
+.coaches {
+  background-color: #16120f;
+  color: #f1ede1;
+}
+
+.coaches .card {
+  margin-bottom: 40px;
+}
+
+.coaches .card img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
