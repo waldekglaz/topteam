@@ -1,6 +1,6 @@
 .hero {
     height: calc(100vh + 80px);
-    background-image: url(../img/romek.jpg);
+    background-image: linear-gradient($black-transparent), url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
